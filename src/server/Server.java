@@ -31,7 +31,7 @@ public class Server {
                 client.add(user);
 
                 String enter_message = "{ \"name\" : \"" + "[ SERVER NOTICE ]" + "\", \"message\" : \"" + name +" Connected" + "\"}";
-                System.out.println(enter_message);
+                //System.out.println(enter_message);
                 List<Client> entry = Server.client;
                 for (Client cli : entry) {
                     DataOutputStream edos = cli.getDos();

@@ -7,19 +7,20 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ChatRoomController">
+<AnchorPane prefHeight="395.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.ChatRoomController">
 
     <children>
         <TextArea fx:id="chatLog" editable="false" layoutX="8.0" layoutY="54.0" prefHeight="293.0" prefWidth="584.0" />
-      <TextField fx:id="txtMesssage" layoutX="8.0" layoutY="360.0" prefHeight="25.0" prefWidth="513.0" style="-fx-background-color: #b3bdbb;" />
+      <TextField fx:id="txtMesssage" layoutX="53.0" layoutY="360.0" onKeyPressed="#key_entered" prefHeight="25.0" prefWidth="468.0" style="-fx-background-color: #b3bdbb;" />
       <Button layoutX="534.0" layoutY="360.0" mnemonicParsing="false" onAction="#onClickSend" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #05f5d1;" text="Send">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
       <Label alignment="CENTER" layoutX="460.0" layoutY="60.0" prefHeight="17.0" prefWidth="36.0" text="User" />
-      <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="110.0" text="Chat-App">
+      <Label layoutX="21.0" layoutY="10.0" prefHeight="35.0" prefWidth="110.0" text="Chat-App">
          <font>
             <Font name="System Italic" size="24.0" />
          </font>
@@ -30,29 +31,35 @@
          </font>
       </Label>
 
-        <Button layoutX="566.0" layoutY="2.0" mnemonicParsing="false" onAction="#ExitOnAction" prefHeight="17.0" prefWidth="32.0">
+              <Button layoutX="566.0" layoutY="2.0" mnemonicParsing="false" onAction="#ExitOnAction" prefHeight="17.0" prefWidth="32.0">
             <graphic>
                 <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true">
                     <image>
-                        <Image url="@../asserts/PngItem_1956808.png" />
-                    </image>
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button layoutX="539.0" layoutY="2.0" mnemonicParsing="false" onAction="#MinimizeOnAction">
-            <graphic>
-                <ImageView fitHeight="17.0" fitWidth="11.0" pickOnBounds="true">
-                    <image>
-                        <Image url="@../asserts/window-minimize.png" />
+                        <Image url="@../../asserts/PngItem_1956808.png" />
                     </image>
                 </ImageView>
             </graphic>
         </Button>
       <ImageView fx:id="imageSend" fitHeight="25.0" fitWidth="32.0" layoutX="480.0" layoutY="360.0" onMouseClicked="#SendImageOnAction" pickOnBounds="true">
          <image>
-            <Image url="@../asserts/camera.png" />
+            <Image url="@../../asserts/camera.png" />
          </image>
       </ImageView>
+        <Button layoutX="539.0" layoutY="2.0" mnemonicParsing="false" onAction="#MinimizeOnAction">
+            <graphic>
+                <ImageView fitHeight="17.0" fitWidth="11.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../../asserts/window-minimize.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+      <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="14.0" layoutY="360.0" onMouseClicked="#ClickOpenEmojePanel" pickOnBounds="true">
+         <image>
+            <Image url="@../../asserts/png-transparent-emoji-icons.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="emojePane" layoutX="11.0" layoutY="394.0" prefHeight="168.0" prefWidth="574.0" />
     </children>
 
 </AnchorPane>

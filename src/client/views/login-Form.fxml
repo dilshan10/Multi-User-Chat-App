@@ -6,21 +6,21 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.LoginFormController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.LoginFormController">
 
     <children>
-        <TextField fx:id="name" layoutX="61.0" layoutY="258.0" prefHeight="25.0" prefWidth="391.0" promptText="Enter The User Name" />
+        <TextField fx:id="name" layoutX="61.0" layoutY="258.0" onKeyPressed="#key_entered" prefHeight="25.0" prefWidth="391.0" promptText="Enter The User Name" />
         <Button layoutX="461.0" layoutY="258.0" mnemonicParsing="false" onAction="#onClick" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #6fe5f2;" text="Login" />
       <ImageView fitHeight="85.0" fitWidth="79.0" layoutX="261.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../asserts/User.png" />
+            <Image url="@../../asserts/User.png" />
          </image>
       </ImageView>
       <Button layoutX="566.0" layoutY="2.0" mnemonicParsing="false" onAction="#ExitOnAction" prefHeight="17.0" prefWidth="32.0">
          <graphic>
             <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true">
                <image>
-                  <Image url="@../asserts/PngItem_1956808.png" />
+                  <Image url="@../../asserts/PngItem_1956808.png" />
                </image>
             </ImageView>
          </graphic>
@@ -29,7 +29,7 @@
          <graphic>
             <ImageView fitHeight="17.0" fitWidth="11.0" pickOnBounds="true">
                <image>
-                  <Image url="@../asserts/window-minimize.png" />
+                  <Image url="@../../asserts/window-minimize.png" />
                </image>
             </ImageView>
          </graphic>

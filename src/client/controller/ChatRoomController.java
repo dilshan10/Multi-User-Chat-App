@@ -1,13 +1,17 @@
-package client;
+package client.controller;
 
+import client.Message;
+import client.data;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -21,6 +25,7 @@ public class ChatRoomController {
     public TextField txtMesssage;
     public Label lblUserName;
     public ImageView imageSend;
+    public Pane emojePane;
     Socket socket;
     DataOutputStream dataOutputStream;
     DataInputStream dataInputStream;
@@ -29,6 +34,7 @@ public class ChatRoomController {
 
     public void initialize() {
         lblUserName.setText(data.name);
+        emojePane.setVisible(false);
     }
 
     public ChatRoomController() {
@@ -47,7 +53,7 @@ public class ChatRoomController {
                     while (true) {
                         String newMsgJson = dataInputStream.readUTF();
 
-                        System.out.println("RE : " + newMsgJson);
+                        //System.out.println("RE : " + newMsgJson);
                         Message newMsg = new Message();
 
                         Object object = parser.parse(newMsgJson);
@@ -97,8 +103,8 @@ public class ChatRoomController {
 
     }
 
-    public void buttonPressed(KeyEvent e) {
-        if (e.getCode().toString().equals("ENTER")) {
+    public void key_entered(KeyEvent keyEvent) {
+        if (keyEvent.getCode() == KeyCode.ENTER) {
             onClickSend();
         }
     }
@@ -113,5 +119,10 @@ public class ChatRoomController {
     }
 
     public void SendImageOnAction(MouseEvent Event) {
+    }
+
+
+    public void ClickOpenEmojePanel(MouseEvent mouseEvent) {
+        emojePane.setVisible(true);
     }
 }

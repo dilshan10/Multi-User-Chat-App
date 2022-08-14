@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33762808-77ce-4eae-bdb9-b5a6d8008354" name="Default Changelist" comment="" />
+    <list default="true" id="33762808-77ce-4eae-bdb9-b5a6d8008354" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/asserts/190238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asserts/png-transparent-emoji-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/image/MyLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multi-Chat-App/client/Chat-room.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multi-Chat-App/client/ChatRoomController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multi-Chat-App/client/ClientInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multi-Chat-App/client/ClientInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multi-Chat-App/client/LoginFormController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multi-Chat-App/client/login-Form.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Multi-Chat-App/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Multi-Chat-App/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Chat-room.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/views/Chat-room.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ChatRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/controller/ChatRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ClientInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/controller/LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/login-Form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/views/login-Form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,27 +29,40 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2DARDCTDPb8cP8VoFiyWOSZkZp7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../New folder (2)/Messenger" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/asserts" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="client" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\programming fundamental\Internet Technologies\Multi-Chat-App\src\client\image" />
+      <recent name="C:\Users\pc\Desktop\programming fundamental\Internet Technologies\Multi-Chat-App\src\client\views" />
+      <recent name="C:\Users\pc\Desktop\programming fundamental\Internet Technologies\Multi-Chat-App\src\client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pc\Desktop\programming fundamental\Internet Technologies\Multi-Chat-App\src\asserts" />
       <recent name="C:\Users\pc\Desktop\programming fundamental\Internet Technologies\Multi-Chat-App\src\lib" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="client" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -47,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ServerInitializer">
+  <component name="RunManager" selected="Application.ClientInitializer">
     <configuration name="CleantInitialize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CleantInitialize" />
       <module name="Multi-Chat-App" />
@@ -60,7 +90,7 @@
       <module name="Multi-Chat-App" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="client.*" />
+          <option name="PATTERN" value="client.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ServerInitializer" />
         <item itemvalue="Application.ClientInitializer" />
+        <item itemvalue="Application.ServerInitializer" />
         <item itemvalue="Application.CleantInitialize" />
       </list>
     </recent_temporary>
@@ -109,11 +139,28 @@
       <workItem from="1660377119302" duration="2762000" />
       <workItem from="1660382801697" duration="6533000" />
       <workItem from="1660399603100" duration="1035000" />
-      <workItem from="1660400815301" duration="698000" />
+      <workItem from="1660400815301" duration="958000" />
+      <workItem from="1660458169073" duration="12102000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
